@@ -14,7 +14,7 @@ dp = Dispatcher(bot)
 async def start(message: types.Message):
     if message.chat.type == 'private':
         await bot.send_message(message.from_user.id,
-                               "Привет это моё тестовое задание по направлению “Кибербезопасность и приложения на Python”",
+                               "Привет. Это моё тестовое задание по направлению “Кибербезопасность и приложения на Python.”",
                                reply_markup=nav.mainMenu)
 
 @dp.message_handler()
